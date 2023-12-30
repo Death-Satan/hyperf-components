@@ -1,0 +1,72 @@
+{
+  "name": "death_satan/hyperf-library",
+  "description": "hyperf组件合集",
+  "keywords": [
+    "Hyperf","library","collect"
+  ],
+  "autoload": {
+
+  },
+  "autoload-dev": {
+
+  },
+  "authors": [
+    {
+      "name": "DeathSatan",
+      "email": "2771717608@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php":">=8.1",
+    "psr/container": "^1.0|^2.0",
+    "psr/event-dispatcher": "^1.0",
+    "psr/http-message": "^1.0|^2.0",
+    "psr/http-server-middleware": "^1.0",
+    "psr/log": "^1.0|^2.0|^3.0",
+    "psr/simple-cache": "^1.0|^2.0|^3.0",
+    "hyperf/di": "~3.1.0",
+    "hyperf/amqp": "~3.1.0",
+    "hyperf/async-queue": "~3.1.0",
+    "hyperf/cache": "~3.1.0",
+    "hyperf/codec": "~3.1.0",
+    "hyperf/command": "~3.1.0",
+    "hyperf/config": "~3.1.0",
+    "hyperf/crontab": "~3.1.0",
+    "hyperf/database": "~3.1.0",
+    "hyperf/database-pgsql": "~3.1.0",
+    "hyperf/constants": "~3.1.0",
+    "hyperf/db-connection": "~3.1.0",
+    "hyperf/filesystem": "~3.1.0",
+    "hyperf/flysystem-oss": "^1.2",
+    "hyperf/framework": "~3.1.0",
+    "hyperf/guzzle": "~3.1.0",
+    "hyperf/http-server": "~3.1.0",
+    "hyperf/logger": "~3.1.0",
+    "hyperf/memory": "~3.1.0",
+    "hyperf/model-cache": "~3.1.0",
+    "hyperf/paginator": "~3.1.0",
+    "hyperf/pool": "~3.1.0",
+    "hyperf/process": "~3.1.0",
+    "hyperf/redis": "~3.1.0",
+    "hyperf/snowflake": "~3.1.0",
+    "hyperf/support": "~3.1.0",
+    "hyperf/translation": "~3.1.0",
+    "hyperf/validation": "~3.1.0",
+    "hyperf/websocket-server": "~3.1.0",
+    "hyperf/migration-generator": "~3.1.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "hyperf/testing": "3.1.*",
+    "phpstan/phpstan": "^1.0",
+    "swoole/ide-helper": "^5.0",
+    "mockery/mockery": "^1.0"
+  },
+  "minimum-stability": "dev",
+  "scripts": {
+    "cs-fix": "php-cs-fixer fix $1",
+    "test": "co-phpunit --prepend test/bootstrap.php -c phpunit.xml --colors=always",
+    "analyse": "phpstan analyse --memory-limit 1000M -l 0 -c phpstan.neon ./src"
+  }
+}
