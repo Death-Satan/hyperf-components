@@ -1,4 +1,4 @@
-name: PHPUnit
+name: Test for Components
 
 on: [ push, pull_request ]
 
@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest ]
-        php-version: [ '8.1' ]
+        php-version: [ '8.1','8.2','8.3' ]
         engine: [ 'none', 'swoole', 'swow' ]
       max-parallel: 5
     steps:
@@ -61,6 +61,9 @@ jobs:
           php --ri swow
       - name: Setup Packages
         run: composer update -o --no-scripts
-      - name: Run Test Cases
-        run: |
-          composer analyse
+      - name: Run analyse
+        run: composer analyse
+      - name: Run Tests
+        run: composer test
+      - name: Run cs-fix
+        run: composer cs-fix --dry-run --diff
