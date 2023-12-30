@@ -1,6 +1,7 @@
 {
   "name": "death_satan/hyperf-support",
   "description": "support for Hyperf",
+  "license": "MIT",
   "keywords": [
     "hyperf","library"
   ],
