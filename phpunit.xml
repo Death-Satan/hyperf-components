@@ -3,12 +3,16 @@
   <coverage/>
   <testsuites>
     <testsuite name="Tests">
-      <directory suffix="Test.php">./src/jwt-auth</directory>
+      <directory suffix="Test.php">./tests</directory>
+    </testsuite>
+    <testsuite name="Tests">
+      <directory suffix="Test.php">./src/hyperf-hashing</directory>
     </testsuite>
   </testsuites>
   <source>
     <include>
-      <directory suffix=".php">./src/jwt-auth/tests</directory>
+      <directory suffix=".php">./src/hyperf-hashing/tests</directory>
+      <directory suffix=".php">./tests</directory>
     </include>
   </source>
 </phpunit>

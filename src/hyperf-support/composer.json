@@ -1,0 +1,22 @@
+{
+  "name": "death_satan/hyperf-support",
+  "description": "support for Hyperf",
+  "keywords": [
+    "hyperf","library"
+  ],
+  "authors": [
+    {
+      "name": "DeathSatan",
+      "email": "2771717608@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "hyperf/framework": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "DeathSatan\\Hyperf\\Support": "src"
+    }
+  }
+}

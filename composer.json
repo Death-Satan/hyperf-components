@@ -5,10 +5,15 @@
     "Hyperf","library","collect"
   ],
   "autoload": {
-
+    "psr-4": {
+      "DeathSatan\\Hashing\\": "src/hyperf-hashing/src",
+      "DeathSatan\\Hyperf\\Support\\": "src/hyperf-support/src"
+    }
   },
   "autoload-dev": {
-
+    "psr-4": {
+      "DeathSatan\\HyperfTests\\": "tests"
+    }
   },
   "authors": [
     {
