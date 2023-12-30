@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DeathSatan\\Hyperf\\Support": "src"
+      "DeathSatan\\Hyperf\\Support\\": "src"
     }
   }
 }
